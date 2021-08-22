@@ -65,20 +65,23 @@ void fahrenheitCentigradeConversion(void) {
 }
 
 void selfServiceCheckout(void) {
-  int item = 0;
-  int quantity;
-  float shoppingTax = 0.0;
-  float subTotal = 0.0;
-  const float tax = 5.5;
-  float total = 0.0;
-  float cost = 0.0;
+  int item = 0; //The number of itmes
+  int quantity; // The quantity of itmes
+  float shoppingTax = 0.0; //The total value of shopping tax
+  float subTotal = 0.0; //The total before taxes have been take away
+  const float tax = 5.5; //The total value of tax
+  float total = 0.0; //The total after taxes have been taken away
+  float cost = 0.0; // The toal cost of the item
 
   do{
-      item++;
+      item++;// This increment the item by 1
+
+      //This ask the user to enter the items
       std::cout<<"Please enter a quantity for item " << item <<" (or 0 to finish): \n";    
       std::cin >> quantity;
 
       if(quantity > 0) {
+        //sk the cost of the item
       std::cout<<"Please enter item " << item <<" cost: \n";
       std::cin >> cost;
       subTotal = subTotal + (quantity * cost);
@@ -89,11 +92,10 @@ void selfServiceCheckout(void) {
   std::cout<< "Thank you. \n";
 
   std::cout<< "\nSubtotal: "<< subTotal;
-
+//The shoppingTax is calculated
   shoppingTax = (subTotal * tax)/100;
   
    std::cout << "Shopping Tax: " <<  tax << "\n\n";
-
   total = subTotal + shoppingTax;
   std::cout << "\nTotal: "<< std::fixed << total <<std::endl; 
       
