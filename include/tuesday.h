@@ -1,8 +1,10 @@
-int passwordChecker(std::string password) {
+int passwordStrenght(std::string password) {
   int value = 0;
   int alphabetCharacters = 0;
   int digitNumbers = 0;
   int specilaCharacters = 0;
+  //int capitalLetters = 0;
+  //int smallLetters = 0;
   
   for(int i = 0; i < password.length(); i++) {
 
@@ -44,9 +46,30 @@ int passwordChecker(std::string password) {
 }
 
 void passwordComplexityChecker(void) {
-	std::cout << " - passwordComplexityChecker: not yet implemented\n\n";
-}
+  std::string password;
+  std::string strenght;
+    std::cout << "Enter a password:  ";
+    getline(std::cin, password);
 
+  switch(passwordStrenght(password)){
+    case 1:
+    strenght = "Weak";
+    break;
+    case 2:
+    strenght = "Moderate";
+    break;
+    case 3:
+    strenght = "Strong";
+    break;
+    case 4:
+    strenght = "Very Strong";
+    break;
+    default:
+    strenght = "Error";
+  }
+
+    std::cout << "The password '" << password << "' is " << strenght << "\n";
+  }
 
 void employeeListRemoval(void) {
 	std::cout << " - employeeListRemoval: not yet implemented\n\n";
