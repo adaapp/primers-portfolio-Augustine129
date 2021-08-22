@@ -43,22 +43,6 @@ int passwordChecker(std::string password) {
   return value;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 void passwordComplexityChecker(void) {
 	std::cout << " - passwordComplexityChecker: not yet implemented\n\n";
 }
