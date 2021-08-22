@@ -1,10 +1,8 @@
 int passwordStrenght(std::string password) {
-  int value = 0;
-  int alphabetCharacters = 0;
-  int digitNumbers = 0;
-  int specilaCharacters = 0;
-  //int capitalLetters = 0;
-  //int smallLetters = 0;
+  int value = 0; //number of values
+  int alphabetCharacters = 0; //number of letters
+  int digitNumbers = 0; //number of numbers
+  int specilaCharacters = 0; //number of special characters
   
   for(int i = 0; i < password.length(); i++) {
 
