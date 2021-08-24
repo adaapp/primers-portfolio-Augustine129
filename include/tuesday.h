@@ -69,6 +69,37 @@ void passwordComplexityChecker(void) {
     std::cout << "The password '" << password << "' is " << strenght << "\n";
   }
 
+void showEmployees (std::vector<std::string> employees) {
+  int employeeSize = employees.size();
+  std::cout << "\nThere are " << employeeSize << " employees:\n";
+   for (std::string i : employees) {
+    std::cout << i << std::endl;
+   }
+  // for(int i; i < employees.size(); i++){
+  //   std::cout << employees[i] << "\n";
+  // }
+}
+
 void employeeListRemoval(void) {
-	std::cout << " - employeeListRemoval: not yet implemented\n\n";
+	using namespace std;
+
+  string input;
+  vector<string> employees = { 
+    "John Smith", 
+    "Jaelynn Stuart", 
+    "Kaley Barajas", 
+    "Walter Collier", 
+    "Cale Myers" };
+
+ showEmployees(employees);  
+
+  cout << "\nEnter an employee name to remove: ";
+  getline(cin, input);
+  
+  auto it = find(employees.begin(), employees.end(), input);
+  if (it != employees.end()) {
+    employees.erase(it);
+  }
+  
+ showEmployees(employees);
 }
