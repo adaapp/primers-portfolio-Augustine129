@@ -6,17 +6,17 @@ int passwordStrenght(std::string password) {
   
   for(int i = 0; i < password.length(); i++) {
 
-    if(std::isdigit(password[i])) {
+    if(std::isdigit(password[i])) {// if the char is a digit 
 
-      digitNumbers++;
+      digitNumbers++; //then increase the digit number by 1
 
-    } else if (std::isalpha(password[i])) {
+    } else if (std::isalpha(password[i])) {// if the char is a alphabetCharacters
 
-     alphabetCharacters++;
+     alphabetCharacters++; // then increase the alphabetCharacters by 1
 
-    } else {
+    } else {// if the char is not an alphabetCharacters and not a digitNumbers 
 
-      specilaCharacters++;
+      specilaCharacters++; // increase the special characters by 1
 
     }
   }
@@ -38,7 +38,6 @@ int passwordStrenght(std::string password) {
   if ( alphabetCharacters > 0 || digitNumbers > 0 ) {
     value = 1;
   }
-
 
   return value;
 }
@@ -75,9 +74,6 @@ void showEmployees (std::vector<std::string> employees) {
    for (std::string i : employees) {
     std::cout << i << std::endl;
    }
-  // for(int i; i < employees.size(); i++){
-  //   std::cout << employees[i] << "\n";
-  // }
 }
 
 void employeeListRemoval(void) {
@@ -99,7 +95,7 @@ void employeeListRemoval(void) {
   auto it = find(employees.begin(), employees.end(), input);
   if (it != employees.end()) {
     employees.erase(it);
-  }
-  
+  };
+
  showEmployees(employees);
 }
