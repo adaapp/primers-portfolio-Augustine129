@@ -71,4 +71,11 @@ The main purpose of this challenegenis it requires us to write a blocking functi
 The main purpose of this primer is that it initialise two threads and each thread it should call a unique function. Thread 1 duration is 5 seconds and thread 2 duration is 10 seconds.
 
 ## Primer 9 - Car Class
+The main objective of this Prmer 9 challenge require us to allow the user to selct option which are provide which are 
+* Turning engine On/ Off
+* Lock/Unclock thei Car
+
+## Reflection (as well as issues, challenges & resolutions)
+For this primer I find it challenging to understand as I could not fix the error.
+
 ## Primer 10 - Are of
