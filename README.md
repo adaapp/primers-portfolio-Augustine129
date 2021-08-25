@@ -31,17 +31,30 @@ To help complete this challenge I needed to break the overall problem down into 
 
 ## REFLECTION
 
-The only issue I had on this primer was the rounding of the subtotal, total and the shopping tax which by multiplying the value by 100 and then dividing by 100 after rounding.
-However If I run it the the total cost does not round into 2dp
+The only issue I had on this primer was the rounding of the subtotal, total and the shopping tax which I did by multiplying the value by 100 and then dividing by 100 after rounding.
+However If I run it the the total cost does not round into 2dp.
 
 ## Primer 3 - Password Complexity Checker
 
-The main purpose on Primer 3 Challenge was to create a password complexity checker where the program determines the complexity of a password based on its use of numeric alphabetical, numerical, or special characters and it suggested whether the Password was weak, moderate, strong or very strong.
+The main purpose on Primer 3 Challenge was to create a password complexity checker where the program determines the complexity of a password based on its use of numeric alphabetical, numerical, or special characters and it suggested whether the password was weak, moderate, strong or very strong.
 
 To help complete this challenge I needed to break the overall problem down into the following main tasks: 
-*Tell the user to wwrite their password
-*Run a complexity check based on if is a digit, alphabetical, special characters.
+* Tell the user to write their password
+* Run a complexity check based on if is a digit, alphabetical, special characters.
 
 ## REFLECTION
 
-I created this program by returning the numbers which are rapresented as if/ else and then returning the outcome of the password complexity by using a swich case which I think in this case was more efficient than the if/else because they are great for a fix data values and it might prove to be faster ifs provided number of cases are good.
+I created this program by returning the numbers which are rapresented as if/ else and then returning the outcome of the password complexity by using a switch case which I think in this case was more efficient than the if/else because they are great for a fix data values and it might prove to be faster ifs provided number of cases are good.
+
+## Primer 4 - Employee List Removal
+
+The main purpose on Primer 4 challege it requires us to show a list of employee names and allow the user to type their names of an employee that they want to remove or delete.
+
+To help complete this challenge I needed to break the overall problem down into the following main tasks: 
+* I created an array
+* Then select the input user of which employee they would like to remove or delete.
+* Remove the employee
+* The remove the instance of the input only if it was a match with any values in the array.
+
+## REFLECTION
+I think the most challenging bit of this primer was to think about where I could store the names of the employees. Then I found out that I could use a vector to store names which means the code needs input validation to show whether the user input is a string or not.
