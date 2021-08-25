@@ -30,12 +30,18 @@ To help complete this challenge I needed to break the overall problem down into 
 * Create an exit condition from the loop when zero is entered
 
 ## REFLECTION
+
 The only issue I had on this primer was the rounding of the subtotal, total and the shopping tax which by multiplying the value by 100 and then dividing by 100 after rounding.
 However If I run it the the total cost does not round into 2dp
 
----
-## Section 3 - Continued Professional Development
-### Benefits of becoming a Polyglot Programmer
-Vestibulum vitae semper sem. Duis leo leo, suscipit at felis non, pellentesque varius massa. Sed sit amet orci nibh. Morbi scelerisque faucibus elit, vitae mollis turpis finibus eget. In convallis euismod nunc non imperdiet. Duis ultricies pulvinar lorem, sed molestie nunc porta at. Aenean arcu ante, efficitur nec felis sed, feugiat iaculis turpis. Vestibulum eu elementum diam. Quisque nec tortor auctor, scelerisque ante vitae, fringilla tellus.
+## Primer 3 - Password Complexity Checker
 
-Quisque ligula lectus, efficitur quis malesuada sit amet, malesuada sed nibh. In lorem erat, elementum quis tempus nec, rhoncus ac ante. Mauris suscipit massa tempor, pulvinar neque vel, gravida nulla. Donec massa diam, molestie in diam nec, vulputate faucibus ligula. Aliquam erat volutpat. Aliquam sit amet dui ligula. Nullam euismod eros ultrices magna convallis lobortis. Proin convallis placerat tincidunt. Quisque interdum, nisi id egestas luctus, augue libero lacinia urna, sit amet tempus nisl sem nec quam. Vestibulum interdum urna mauris, vel dignissim nisi dignissim egestas. Donec volutpat dictum dui, at egestas sem tristique nec.
+The main purpose on Primer 3 Challenge was to create a password complexity checker where the program determines the complexity of a password based on its use of numeric alphabetical, numerical, or special characters and it suggested whether the Password was weak, moderate, strong or very strong.
+
+To help complete this challenge I needed to break the overall problem down into the following main tasks: 
+*Tell the user to wwrite their password
+*Run a complexity check based on if is a digit, alphabetical, special characters.
+
+## REFLECTION
+
+I created this program by returning the numbers which are rapresented as if/ else and then returning the outcome of the password complexity by using a swich case which I think in this case was more efficient than the if/else because they are great for a fix data values and it might prove to be faster ifs provided number of cases are good.
