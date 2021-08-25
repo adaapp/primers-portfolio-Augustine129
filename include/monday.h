@@ -84,7 +84,7 @@ void selfServiceCheckout(void) {
         //sk the cost of the item
       std::cout<<"Please enter item " << item <<" cost: \n";
       std::cin >> cost;
-      subTotal = subTotal + (quantity * cost)
+      subTotal = subTotal + (quantity * cost);
       }    
   }
   while(quantity > 0);

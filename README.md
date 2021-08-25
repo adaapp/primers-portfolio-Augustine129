@@ -58,3 +58,17 @@ To help complete this challenge I needed to break the overall problem down into 
 
 ## REFLECTION
 I think the most challenging bit of this primer was to think about where I could store the names of the employees. Then I found out that I could use a vector to store names which means the code needs input validation to show whether the user input is a string or not.
+
+## Primer 5 - Phone Directory
+## Primer 6 - Data file parser
+
+## Primer 7 - Sleep timer
+
+The main purpose of this challenegenis it requires us to write a blocking function that would have a default value of 10 seconds.  In my opinion I found this challenge easy to understand.
+
+## Primer 8 - Joining & Detaching Threads
+
+The main purpose of this primer is that it initialise two threads and each thread it should call a unique function. Thread 1 duration is 5 seconds and thread 2 duration is 10 seconds.
+
+## Primer 9 - Car Class
+## Primer 10 - Are of
