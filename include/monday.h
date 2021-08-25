@@ -84,16 +84,21 @@ void selfServiceCheckout(void) {
         //sk the cost of the item
       std::cout<<"Please enter item " << item <<" cost: \n";
       std::cin >> cost;
-      subTotal = subTotal + (quantity * cost);
+      subTotal = subTotal + (quantity * cost)
       }    
   }
   while(quantity > 0);
+
+  //Try to Round to 2dp
+  subTotal = roundf(subTotal * 100) / 100;
+  shoppingTax = roundf(subTotal * (5.5 / 100) * 100) / 100;
+  total = roundf((subTotal + tax) * 100) / 100;
   
   std::cout<< "Thank you. \n";
 
   std::cout<< "\nSubtotal: "<< subTotal;
 //The shoppingTax is calculated
-  shoppingTax = (subTotal * tax)/100;
+  shoppingTax = (subTotal * tax)/1000;
   
    std::cout << "Shopping Tax: " <<  tax << "\n\n";
   total = subTotal + shoppingTax;

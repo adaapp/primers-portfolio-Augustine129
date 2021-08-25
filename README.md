@@ -11,18 +11,27 @@ To help complete this challenge I needed to break the overall problem down into 
 * Create a method to convert C->F
  
 #### Reflection (as well as issues, challenges & resolutions)
-The biggest issue was related to testing the areas my solution failed, originally, I tested to see if it worked - however, it wasn’t until I tried to break it that I found some of the more serious issues with my design and implementation.  For example, ...
+The biggest issue was related to testing the areas my solution failed, originally, I tested to see if it worked - however, it wasn’t until I tried to break it that I found some of the more serious issues with my design and implementation.  For example, if the user  enteres a string the console would show an error.
+To fix this issue I decided to  use the method stof() which means that the user can't input a string which makes this method more effective.
+
+One thing I could have improved to make my code more readeble and more effective was to use an switch, case because It could be more readeble format instead of writing a bunch of if statements. 
+
+However the reason why I decided to use a if-else statement instead of the switch, case it's because the if-else is better for boolean values also they are great for variable conditions that result into a boolean, and I find it easier to understand.
 
 ### Primer 2 - Self-service Checkout
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac elit in magna porttitor convallis. Ut eu justo rutrum, luctus lorem a, pretium quam. Sed ut commodo lectus. Vestibulum ut ligula lorem. Nulla mattis varius ex ac luctus. Aenean nec laoreet enim. Sed lorem erat, vestibulum ut faucibus vel, pellentesque nec felis. Vivamus metus tellus, pretium eu sodales interdum, fringilla ut mauris. ....
+This challenge allows the user to select a number of items and their cost. It was a simple algorithm that calculated the sub total by multiplying the total quantity of the item by cost and adding the 5.5% tax on it and then add those two values together to diplay the total amout spent from the users.
 
-..  
-..  
+To help complete this challenge I needed to break the overall problem down into the following main tasks: 
+* Get data from the user
+* Ask the user to input the item quantity
+* Ask the user to input the item cost
+* Multiply the quantity and cost, at the end add to the subtotal
+* Adding of shopping tax and the total
+* Create an exit condition from the loop when zero is entered
 
----
-## Section 2 - Programming Paradigms
-### Programming Paradigms
-Simply put, a programming paradigm, for example, procedural, object-oriented, functional, structured, declarative, imperative and event driven can be described as a specific approach used when trying to solve a problem.  Although many programming languages can (and do) support multiple paradigms this discussion will focus more specifically on the possible benefits with examples of the potential differences and similarities of five from the above list. These are ...
+## REFLECTION
+The only issue I had on this primer was the rounding of the subtotal, total and the shopping tax which by multiplying the value by 100 and then dividing by 100 after rounding.
+However If I run it the the total cost does not round into 2dp
 
 ---
 ## Section 3 - Continued Professional Development
